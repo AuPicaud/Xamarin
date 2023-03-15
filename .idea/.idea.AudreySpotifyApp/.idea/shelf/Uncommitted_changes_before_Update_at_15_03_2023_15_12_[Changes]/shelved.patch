@@ -1,0 +1,23 @@
+Index: AudreySpotifyApp/AudreySpotifyApp/Views/AboutPage.xaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n             x:Class=\"AudreySpotifyApp.Views.AboutPage\"\r\n             xmlns:vm=\"clr-namespace:AudreySpotifyApp.ViewModels\"\r\n             Title=\"{Binding Title}\">\r\n    \r\n    <ContentPage.BindingContext>\r\n        <vm:AboutViewModel />\r\n    </ContentPage.BindingContext>\r\n    \r\n    <ContentPage.Resources>\r\n        <ResourceDictionary>\r\n            <Color x:Key=\"Accent\">#96d1ff</Color>\r\n        </ResourceDictionary>\r\n    </ContentPage.Resources>\r\n\r\n    <Grid>\r\n        <Grid.RowDefinitions>\r\n            <RowDefinition Height=\"Auto\" />\r\n            <RowDefinition Height=\"*\" />\r\n        </Grid.RowDefinitions>\r\n        <StackLayout BackgroundColor=\"{StaticResource Accent}\" VerticalOptions=\"FillAndExpand\" HorizontalOptions=\"Fill\">\r\n            <StackLayout Orientation=\"Horizontal\" HorizontalOptions=\"Center\" VerticalOptions=\"Center\">\r\n                <ContentView Padding=\"0,40,0,40\" VerticalOptions=\"FillAndExpand\">\r\n                    <Image Source=\"xamarin_logo.png\" VerticalOptions=\"Center\" HeightRequest=\"64\" />\r\n                </ContentView>\r\n            </StackLayout>\r\n        </StackLayout>\r\n        <ScrollView Grid.Row=\"1\">\r\n            <StackLayout Orientation=\"Vertical\" Padding=\"30,24,30,24\" Spacing=\"10\">\r\n                <Label Text=\"Start developing now\" FontSize=\"Title\"/>\r\n                <Label Text=\"Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!\" FontSize=\"16\" Padding=\"0,0,0,0\"/>\r\n                <Label FontSize=\"16\" Padding=\"0,24,0,0\">\r\n                    <Label.FormattedText>\r\n                        <FormattedString>\r\n                            <FormattedString.Spans>\r\n                                <Span Text=\"Learn more at \"/>\r\n                                <Span Text=\"https://aka.ms/xamarin-quickstart\" FontAttributes=\"Bold\"/>\r\n                            </FormattedString.Spans>\r\n                        </FormattedString>\r\n                    </Label.FormattedText>\r\n                </Label>\r\n                <Button Margin=\"0,10,0,0\" Text=\"Learn more\"\r\n                        Command=\"{Binding OpenWebCommand}\"\r\n                        BackgroundColor=\"{StaticResource Primary}\"\r\n                        TextColor=\"White\" />\r\n            </StackLayout>\r\n        </ScrollView>\r\n    </Grid>\r\n\r\n</ContentPage>\r\n
+===================================================================
+diff --git a/AudreySpotifyApp/AudreySpotifyApp/Views/AboutPage.xaml b/AudreySpotifyApp/AudreySpotifyApp/Views/AboutPage.xaml
+--- a/AudreySpotifyApp/AudreySpotifyApp/Views/AboutPage.xaml	
++++ b/AudreySpotifyApp/AudreySpotifyApp/Views/AboutPage.xaml	
+@@ -20,12 +20,8 @@
+             <RowDefinition Height="Auto" />
+             <RowDefinition Height="*" />
+         </Grid.RowDefinitions>
+-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+-                </ContentView>
+-            </StackLayout>
++        <StackLayout>
++            <Label Text="Hello" FontSize="Title" TextColor="Black"/>
+         </StackLayout>
+         <ScrollView Grid.Row="1">
+             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
