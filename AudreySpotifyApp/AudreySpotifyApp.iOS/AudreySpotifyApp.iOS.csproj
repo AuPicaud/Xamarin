@@ -137,9 +137,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\AudreySpotifyApp\AudreySpotifyApp.csproj">
-      <Project>{5E9F324A-BA74-48D7-9CF8-2C0B21AD1A86}</Project>
-      <Name>AudreySpotifyApp</Name>
+    <ProjectReference Include="..\AudreyMaximeSpotifyApp\AudreyMaximeSpotifyApp.csproj">
+      <Project>{5cc41d56-1ade-4a72-a31d-898a3b7c071f}</Project>
+      <Name>AudreyMaximeSpotifyApp</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

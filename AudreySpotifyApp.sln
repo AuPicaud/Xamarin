@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudreySpotifyApp.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudreySpotifyApp.iOS", "AudreySpotifyApp\AudreySpotifyApp.iOS\AudreySpotifyApp.iOS.csproj", "{B83C83E3-3E86-4593-BC05-975D6235A047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudreySpotifyApp", "AudreySpotifyApp\AudreySpotifyApp\AudreySpotifyApp.csproj", "{5CC41D56-1ADE-4A72-A31D-898A3B7C071F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudreyMaximeSpotifyApp", "AudreySpotifyApp\AudreyMaximeSpotifyApp\AudreyMaximeSpotifyApp.csproj", "{5CC41D56-1ADE-4A72-A31D-898A3B7C071F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
