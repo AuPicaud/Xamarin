@@ -118,6 +118,7 @@
     <BundleResource Include="Resources\icon_feed.png" />
     <BundleResource Include="Resources\icon_feed%402x.png" />
     <BundleResource Include="Resources\icon_feed%403x.png" />
+    <BundleResource Include="Resources\Xamarin_l.png" />
     <BundleResource Include="Resources\xamarin_logo.png" />
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
@@ -141,5 +142,10 @@
       <Project>{5cc41d56-1ade-4a72-a31d-898a3b7c071f}</Project>
       <Name>AudreyMaximeSpotifyApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\AudreySpotifyApp.Android\Resources\drawable\Spotify_App_Logo.png">
+      <Link>Resources\Spotify_App_Logo.png</Link>
+    </Content>
   </ItemGroup>
 </Project>
