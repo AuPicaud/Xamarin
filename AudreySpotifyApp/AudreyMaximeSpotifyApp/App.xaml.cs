@@ -1,32 +1,21 @@
-﻿using AudreySpotifyApp.Services;
-using AudreySpotifyApp.Views;
-using System;
+﻿using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace AudreySpotifyApp
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
+            AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
         }
-
-        protected override void OnStart()
+        
+        private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            Exception exception = e.ExceptionObject as Exception;
+            Console.WriteLine("Exception non gérée : " + exception?.Message);
         }
     }
 }

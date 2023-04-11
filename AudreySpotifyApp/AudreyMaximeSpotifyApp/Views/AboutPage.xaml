@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AudreySpotifyApp.Views"
              x:Class="AudreySpotifyApp.Views.AboutPage"
              BackgroundColor="#000525">
 
@@ -55,5 +56,27 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
         </Grid>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Spacing="5">
+            <Button Text="1"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Command="{Binding NavigateToAboutPageCommand}" />
+            <Button Text="2"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Command="{Binding NavigateToArtistPageCommand}" />
+            <Button Text="3"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontSize="Medium" />
+            <Button Text="4"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontSize="Medium" />    
+        </StackLayout>
     </FlexLayout>
 </ContentPage>

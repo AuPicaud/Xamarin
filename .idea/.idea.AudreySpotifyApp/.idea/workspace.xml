@@ -14,13 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2023_15_12_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2023_15_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2023_15_12__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2023_15_12__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AudreyMaximeSpotifyApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AudreyMaximeSpotifyApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/LoginPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/LoginPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,14 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/LoginPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
       <facet id="AudreySpotifyApp.Android/invalid/Android Facet - AudreySpotifyApp.Android" />
@@ -59,30 +70,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "rider.run.widget.enabled.cache": "false",
-    "settings.editor.selected.configurable": "preferences.environmentSetup",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\m1x6m\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\m1x6m\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\m1x6m\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;C#&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\m1x6m\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\m1x6m\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\m1x6m\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Xamarin.Android.AudreySpotifyApp.Android">
     <configuration name="AudreySpotifyApp.Android" type="XamarinAndroidProject" factoryName="Xamarin.Android">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj" />
@@ -116,8 +131,17 @@
       <workItem from="1681196394401" duration="1394000" />
       <workItem from="1681197847256" duration="512000" />
       <workItem from="1681198526586" duration="531000" />
-      <workItem from="1681199376199" duration="5144000" />
+      <workItem from="1681199376199" duration="9246000" />
+      <workItem from="1681212734967" duration="8453000" />
     </task>
+    <task id="LOCAL-00001" summary="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel">
+      <created>1681204831376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681204831376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
   </component>
 </project>

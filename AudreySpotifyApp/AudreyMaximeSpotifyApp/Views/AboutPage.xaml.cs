@@ -15,7 +15,8 @@ namespace AudreySpotifyApp.Views
             InitializeComponent();
 
             _viewModel = new AboutViewModel();
-            BindingContext = _viewModel;
+            BindingContext = new AboutViewModel();
+
 
             FillColorGrid();
         }
