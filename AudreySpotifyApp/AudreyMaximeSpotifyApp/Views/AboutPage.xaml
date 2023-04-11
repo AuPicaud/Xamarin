@@ -72,7 +72,8 @@
             <Button Text="3"
                     BackgroundColor="Transparent"
                     TextColor="White"
-                    FontSize="Medium" />
+                    FontSize="Medium"
+                    Command="{Binding NavigateToAlbumPageCommand}" />
             <Button Text="4"
                     BackgroundColor="Transparent"
                     TextColor="White"

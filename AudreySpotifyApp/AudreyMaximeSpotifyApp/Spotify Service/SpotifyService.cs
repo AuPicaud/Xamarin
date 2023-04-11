@@ -15,8 +15,8 @@ namespace AudreySpotifyApp.Services
 
         private async Task InitializeSpotifyClientAsync()
         {
-            string clientId = "client_id";
-            string clientSecret = "client_secret";
+            string clientId = "clientid";
+            string clientSecret = "idclietsecret";
             var token = await GetAccessTokenAsync(clientId, clientSecret);
 
             var config = SpotifyClientConfig.CreateDefault();
@@ -27,6 +27,12 @@ namespace AudreySpotifyApp.Services
         {
             var artist = await _spotifyClient.Artists.Get(artistId);
             return artist;
+        }
+        
+        public async Task<FullAlbum> GetAlbumAsync(string albumId)
+        {
+            var album = await _spotifyClient.Albums.Get(albumId);
+            return album;
         }
 
         private async Task<ClientCredentialsTokenResponse> GetAccessTokenAsync(string clientId, string clientSecret)

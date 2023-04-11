@@ -14,6 +14,7 @@ namespace AudreySpotifyApp.ViewModels
             InvertColorsCommand = new Command(() => MessagingCenter.Send(this, "InvertColors"));
             NavigateToAboutPageCommand = new Command(NavigateToAboutPage);
             NavigateToArtistPageCommand = new Command(async () => await Shell.Current.GoToAsync("/ArtistPage"));
+            NavigateToAlbumPageCommand = new Command(async () => await Shell.Current.GoToAsync("/AlbumPage"));
         }
         
         private async void NavigateToAboutPage()
@@ -25,11 +26,16 @@ namespace AudreySpotifyApp.ViewModels
         {
             await Shell.Current.GoToAsync("/ArtistPage");
         }
+        
+        private async void NavigateToAlbumPage()
+        {
+            await Shell.Current.GoToAsync("/AlbumPage");
+        }
 
         public ICommand OpenWebCommand { get; }
         public ICommand InvertColorsCommand { get; }
         public ICommand NavigateToAboutPageCommand { get; }
         public ICommand NavigateToArtistPageCommand { get; }
-        
+        public ICommand NavigateToAlbumPageCommand { get; }
     }
 }
