@@ -9,10 +9,15 @@ namespace AudreySpotifyApp.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "À propos";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            InvertColorsCommand = new Command(() => MessagingCenter.Send(this, "InvertColors"));
+
         }
 
         public ICommand OpenWebCommand { get; }
+        public ICommand InvertColorsCommand { get; }
+        
+        
     }
 }

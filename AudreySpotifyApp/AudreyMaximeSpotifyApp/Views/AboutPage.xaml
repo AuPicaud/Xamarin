@@ -2,15 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AudreySpotifyApp.Views.AboutPage"
-             xmlns:vm="clr-namespace:AudreySpotifyApp.ViewModels"
              BackgroundColor="#000525">
-    
-    <ContentPage.BindingContext>
-        <vm:AboutViewModel />
-    </ContentPage.BindingContext>
 
     <FlexLayout Direction="Column"
-                AlignItems="Center"
                 JustifyContent="SpaceEvenly">
         
         <Label Text="Bienvenue sur ma première application Xamarin !"
@@ -40,10 +34,26 @@
                    HorizontalOptions="Center" 
                    Grid.Column="1"/>
         </Grid>
-        <Button Margin="0,10,0,0" Text="Cliqué moi !"
-                Command="{Binding OpenWebCommand}"
+        <Button Margin="0,10,0,0" Text="Clique en vif"
+                Command="{Binding InvertColorsCommand}"
                 BackgroundColor="#009519"
                 TextColor="White" />
-        
+
+        <Grid x:Name="ColorGrid" RowSpacing="2" ColumnSpacing="2"
+              HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
     </FlexLayout>
 </ContentPage>
