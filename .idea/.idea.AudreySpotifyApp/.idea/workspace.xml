@@ -15,15 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AudreyMaximeSpotifyApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AudreyMaximeSpotifyApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/LoginPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/LoginPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/ArtistViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/ArtistViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +126,8 @@
       <workItem from="1681197847256" duration="512000" />
       <workItem from="1681198526586" duration="531000" />
       <workItem from="1681199376199" duration="9246000" />
-      <workItem from="1681212734967" duration="8453000" />
+      <workItem from="1681212734967" duration="9487000" />
+      <workItem from="1681231753939" duration="3335000" />
     </task>
     <task id="LOCAL-00001" summary="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel">
       <created>1681204831376</created>
@@ -141,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681204831376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité">
+      <created>1681221529475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681221529475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +165,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
+    <MESSAGE value="+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité" />
   </component>
 </project>

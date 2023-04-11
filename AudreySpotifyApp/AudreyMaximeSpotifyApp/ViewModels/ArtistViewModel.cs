@@ -76,7 +76,7 @@ namespace AudreySpotifyApp.ViewModels
 
         public async Task LoadArtistDataAsync()
         {
-            string artistId = "4gzpq5DPGxSnKTe4SA8HAU";
+            string artistId = "6qqNVTkY8uBg9cP3Jd7DAH";
             var artist = await _spotifyService.GetArtistAsync(artistId);
             ArtistName = artist.Name;
             ArtistImage = ImageSource.FromUri(new Uri(artist.Images[0].Url));
