@@ -37,7 +37,7 @@
         </Grid>
         <Button Margin="0,10,0,0" Text="Clique en vif"
                 Command="{Binding InvertColorsCommand}"
-                BackgroundColor="#009519"
+                BackgroundColor="#0077C2"
                 TextColor="White" />
 
         <Grid x:Name="ColorGrid" RowSpacing="2" ColumnSpacing="2"

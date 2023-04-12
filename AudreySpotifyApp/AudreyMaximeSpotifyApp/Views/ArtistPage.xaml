@@ -4,12 +4,9 @@
              x:Class="AudreySpotifyApp.Views.ArtistPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="BackgroundColor">#1C1C1E</Color>
-            <Color x:Key="ForegroundColor">#FFFFFF</Color>
-            <Color x:Key="AccentColor">#1DB954</Color>
-            <Color x:Key="SecondaryColor">#282828</Color>
-            <Color x:Key="BorderColor">#1ED760</Color>
-            <Color x:Key="TextColor">#B3B3B3</Color>
+            <Color x:Key="BackgroundColor">#F2F6FE</Color>
+            <Color x:Key="ForegroundColor">#1C1C1E</Color>
+            <Color x:Key="AccentColor">#0077C2</Color>
             <Style x:Key="TitleLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
                 <Setter Property="FontAttributes" Value="Bold" />
@@ -18,32 +15,40 @@
             <Style x:Key="DataLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource ForegroundColor}" />
             </Style>
+            <Style x:Key="CategoryLabel" TargetType="Label">
+                <Setter Property="Margin" Value="0,0,10,0" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{StaticResource BackgroundColor}" Spacing="20" Padding="20">
-            <Image Source="{Binding ArtistImage}" Aspect="AspectFit" HeightRequest="200" />
+        <Grid BackgroundColor="{StaticResource BackgroundColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-            <StackLayout Spacing="5">
-                <Label Text="Nom de l'artiste" Style="{StaticResource TitleLabel}" FontSize="Large" />
-                <Label Text="{Binding ArtistName}" Style="{StaticResource DataLabel}" FontSize="Medium" />
-            </StackLayout>
+            <Image Grid.Row="0" Source="{Binding ArtistImage}" Aspect="AspectFill" HeightRequest="250" />
 
-            <StackLayout Orientation="Horizontal" Spacing="5">
-                <Label Text="Genres musicaux : " Style="{StaticResource TitleLabel}" />
-                <Label Text="{Binding ArtistGenres}" Style="{StaticResource DataLabel}" />
-            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Vertical" Padding="20" Spacing="20">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="{Binding ArtistName}" Style="{StaticResource TitleLabel}" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
 
-            <StackLayout Orientation="Horizontal" Spacing="5">
-                <Label Text="Nombre de followers : " Style="{StaticResource TitleLabel}" />
-                <Label Text="{Binding ArtistFollowers, StringFormat='{0:n0}'}" Style="{StaticResource DataLabel}" />
-            </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Spacing="10">
+                    <Label Text="Genres musicaux" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
+                    <FlexLayout Wrap="Wrap" HorizontalOptions="StartAndExpand">
+                        <Label Text="{Binding ArtistGenres}" Style="{StaticResource CategoryLabel}" />
+                    </FlexLayout>
+                    <Label Text="Nombre de followers" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
+                    <Label Text="{Binding ArtistFollowers}" Style="{StaticResource DataLabel}" HorizontalOptions="StartAndExpand"/>
 
-            <StackLayout Orientation="Horizontal" Spacing="5">
-                <Label Text="Popularité : " Style="{StaticResource TitleLabel}" />
-                <Label Text="{Binding ArtistPopularity}" Style="{StaticResource DataLabel}" />
+                    <Label Text="Popularité" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
+                    <Label Text="{Binding ArtistPopularity}" Style="{StaticResource DataLabel}" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                    
             </StackLayout>
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

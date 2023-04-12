@@ -13,13 +13,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="+ Mise en page Page 2 rapide">
+    <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +45,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/ArtistViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -128,7 +127,9 @@
       <workItem from="1681198526586" duration="531000" />
       <workItem from="1681199376199" duration="9246000" />
       <workItem from="1681212734967" duration="9487000" />
-      <workItem from="1681231753939" duration="8819000" />
+      <workItem from="1681231753939" duration="9897000" />
+      <workItem from="1681304084221" duration="3927000" />
+      <workItem from="1681315641742" duration="3393000" />
     </task>
     <task id="LOCAL-00001" summary="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel">
       <created>1681204831376</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681235245548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas">
+      <created>1681241122166</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681241122166</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +183,7 @@
     <MESSAGE value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
     <MESSAGE value="+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité" />
     <MESSAGE value="+ Mise en page Page 2 rapide" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Mise en page Page 2 rapide" />
+    <MESSAGE value="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas" />
   </component>
 </project>

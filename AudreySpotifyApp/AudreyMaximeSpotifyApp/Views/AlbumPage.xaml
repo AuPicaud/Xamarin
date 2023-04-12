@@ -4,12 +4,9 @@
              x:Class="AudreySpotifyApp.Views.AlbumPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="BackgroundColor">#1C1C1E</Color>
-            <Color x:Key="ForegroundColor">#FFFFFF</Color>
-            <Color x:Key="AccentColor">#1DB954</Color>
-            <Color x:Key="SecondaryColor">#282828</Color>
-            <Color x:Key="BorderColor">#1ED760</Color>
-            <Color x:Key="TextColor">#B3B3B3</Color>
+            <Color x:Key="BackgroundColor">#F2F6FE</Color>
+            <Color x:Key="ForegroundColor">#1C1C1E</Color>
+            <Color x:Key="AccentColor">#0077C2</Color>
             <Style x:Key="TitleLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
                 <Setter Property="FontAttributes" Value="Bold" />

@@ -10,6 +10,7 @@ namespace AudreySpotifyApp
             InitializeComponent();
             MainPage = new AppShell();
             AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
+            
         }
         
         private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
