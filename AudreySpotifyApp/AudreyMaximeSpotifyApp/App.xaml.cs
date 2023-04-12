@@ -8,9 +8,12 @@ namespace AudreySpotifyApp
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell();
-            AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
             
+            var icon = ImageSource.FromResource("AudreySpotifyApp.Android\\Resources\\drawable\\LogoMusic.png");
+            MainPage = new AppShell();
+            MainPage.IconImageSource = icon;
+
+            AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
         }
         
         private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
