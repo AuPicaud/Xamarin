@@ -1,0 +1,303 @@
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n             x:Class=\"AudreySpotifyApp.Views.AlbumPage\">\r\n    <ContentPage.Resources>\r\n        <ResourceDictionary>\r\n            <Color x:Key=\"BackgroundColor\">#1C1C1E</Color>\r\n            <Color x:Key=\"ForegroundColor\">#FFFFFF</Color>\r\n            <Color x:Key=\"AccentColor\">#1DB954</Color>\r\n            <Color x:Key=\"SecondaryColor\">#282828</Color>\r\n            <Color x:Key=\"BorderColor\">#1ED760</Color>\r\n            <Color x:Key=\"TextColor\">#B3B3B3</Color>\r\n            <Style x:Key=\"TitleLabel\" TargetType=\"Label\">\r\n                <Setter Property=\"TextColor\" Value=\"{StaticResource AccentColor}\" />\r\n                <Setter Property=\"FontAttributes\" Value=\"Bold\" />\r\n                <Setter Property=\"Margin\" Value=\"0,0,10,0\" />\r\n            </Style>\r\n            <Style x:Key=\"DataLabel\" TargetType=\"Label\">\r\n                <Setter Property=\"TextColor\" Value=\"{StaticResource ForegroundColor}\" />\r\n            </Style>\r\n        </ResourceDictionary>\r\n    </ContentPage.Resources>\r\n\r\n    <ContentPage.Content>\r\n        <StackLayout BackgroundColor=\"{StaticResource BackgroundColor}\" Spacing=\"20\" Padding=\"20\">\r\n            <Image Source=\"{Binding AlbumImage}\" Aspect=\"AspectFit\" HeightRequest=\"200\" />\r\n\r\n            <StackLayout Spacing=\"5\">\r\n                <Label Text=\"Nom de l'album\" Style=\"{StaticResource TitleLabel}\" FontSize=\"Large\" />\r\n                <Label Text=\"{Binding AlbumName}\" Style=\"{StaticResource DataLabel}\" FontSize=\"Medium\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Spacing=\"5\">\r\n                <Label Text=\"Nom de l'artiste\" Style=\"{StaticResource TitleLabel}\" FontSize=\"Large\" />\r\n                <Label Text=\"{Binding ArtistName}\" Style=\"{StaticResource DataLabel}\" FontSize=\"Medium\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Spacing=\"5\">\r\n                <Label Text=\"Date de réalisation\" Style=\"{StaticResource TitleLabel}\" FontSize=\"Large\" />\r\n                <Label Text=\"{Binding ReleaseDate}\" Style=\"{StaticResource DataLabel}\" FontSize=\"Medium\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Spacing=\"5\">\r\n                <Label Text=\"Liste des titres\" Style=\"{StaticResource TitleLabel}\" FontSize=\"Large\" />\r\n                <CollectionView ItemsSource=\"{Binding TrackList}\">\r\n                    <CollectionView.ItemTemplate>\r\n                        <DataTemplate>\r\n                            <Label Text=\"{Binding TrackName}\" Style=\"{StaticResource DataLabel}\" FontSize=\"Medium\" />\r\n                        </DataTemplate>\r\n                    </CollectionView.ItemTemplate>\r\n                </CollectionView>\r\n            </StackLayout>\r\n        </StackLayout>\r\n    </ContentPage.Content>\r\n</ContentPage>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml	(date 1681318749976)
+@@ -4,12 +4,9 @@
+              x:Class="AudreySpotifyApp.Views.AlbumPage">
+     <ContentPage.Resources>
+         <ResourceDictionary>
+-            <Color x:Key="BackgroundColor">#1C1C1E</Color>
+-            <Color x:Key="ForegroundColor">#FFFFFF</Color>
+-            <Color x:Key="AccentColor">#1DB954</Color>
+-            <Color x:Key="SecondaryColor">#282828</Color>
+-            <Color x:Key="BorderColor">#1ED760</Color>
+-            <Color x:Key="TextColor">#B3B3B3</Color>
++            <Color x:Key="BackgroundColor">#F2F6FE</Color>
++            <Color x:Key="ForegroundColor">#1C1C1E</Color>
++            <Color x:Key="AccentColor">#0077C2</Color>
+             <Style x:Key="TitleLabel" TargetType="Label">
+                 <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
+                 <Setter Property="FontAttributes" Value="Bold" />
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n             x:Class=\"AudreySpotifyApp.Views.ArtistPage\">\r\n    <ContentPage.Resources>\r\n        <ResourceDictionary>\r\n            <Color x:Key=\"BackgroundColor\">#1C1C1E</Color>\r\n            <Color x:Key=\"ForegroundColor\">#FFFFFF</Color>\r\n            <Color x:Key=\"AccentColor\">#1DB954</Color>\r\n            <Color x:Key=\"SecondaryColor\">#282828</Color>\r\n            <Color x:Key=\"BorderColor\">#1ED760</Color>\r\n            <Color x:Key=\"TextColor\">#B3B3B3</Color>\r\n            <Style x:Key=\"TitleLabel\" TargetType=\"Label\">\r\n                <Setter Property=\"TextColor\" Value=\"{StaticResource AccentColor}\" />\r\n                <Setter Property=\"FontAttributes\" Value=\"Bold\" />\r\n                <Setter Property=\"Margin\" Value=\"0,0,10,0\" />\r\n            </Style>\r\n            <Style x:Key=\"DataLabel\" TargetType=\"Label\">\r\n                <Setter Property=\"TextColor\" Value=\"{StaticResource ForegroundColor}\" />\r\n            </Style>\r\n        </ResourceDictionary>\r\n    </ContentPage.Resources>\r\n\r\n    <ContentPage.Content>\r\n        <StackLayout BackgroundColor=\"{StaticResource BackgroundColor}\" Spacing=\"20\" Padding=\"20\">\r\n            <Image Source=\"{Binding ArtistImage}\" Aspect=\"AspectFit\" HeightRequest=\"200\" />\r\n\r\n            <StackLayout Spacing=\"5\">\r\n                <Label Text=\"Nom de l'artiste\" Style=\"{StaticResource TitleLabel}\" FontSize=\"Large\" />\r\n                <Label Text=\"{Binding ArtistName}\" Style=\"{StaticResource DataLabel}\" FontSize=\"Medium\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Orientation=\"Horizontal\" Spacing=\"5\">\r\n                <Label Text=\"Genres musicaux : \" Style=\"{StaticResource TitleLabel}\" />\r\n                <Label Text=\"{Binding ArtistGenres}\" Style=\"{StaticResource DataLabel}\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Orientation=\"Horizontal\" Spacing=\"5\">\r\n                <Label Text=\"Nombre de followers : \" Style=\"{StaticResource TitleLabel}\" />\r\n                <Label Text=\"{Binding ArtistFollowers, StringFormat='{0:n0}'}\" Style=\"{StaticResource DataLabel}\" />\r\n            </StackLayout>\r\n\r\n            <StackLayout Orientation=\"Horizontal\" Spacing=\"5\">\r\n                <Label Text=\"Popularité : \" Style=\"{StaticResource TitleLabel}\" />\r\n                <Label Text=\"{Binding ArtistPopularity}\" Style=\"{StaticResource DataLabel}\" />\r\n            </StackLayout>\r\n        </StackLayout>\r\n    </ContentPage.Content>\r\n</ContentPage>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml	(date 1681318863903)
+@@ -4,12 +4,9 @@
+              x:Class="AudreySpotifyApp.Views.ArtistPage">
+     <ContentPage.Resources>
+         <ResourceDictionary>
+-            <Color x:Key="BackgroundColor">#1C1C1E</Color>
+-            <Color x:Key="ForegroundColor">#FFFFFF</Color>
+-            <Color x:Key="AccentColor">#1DB954</Color>
+-            <Color x:Key="SecondaryColor">#282828</Color>
+-            <Color x:Key="BorderColor">#1ED760</Color>
+-            <Color x:Key="TextColor">#B3B3B3</Color>
++            <Color x:Key="BackgroundColor">#F2F6FE</Color>
++            <Color x:Key="ForegroundColor">#1C1C1E</Color>
++            <Color x:Key="AccentColor">#0077C2</Color>
+             <Style x:Key="TitleLabel" TargetType="Label">
+                 <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
+                 <Setter Property="FontAttributes" Value="Bold" />
+@@ -17,33 +14,41 @@
+             </Style>
+             <Style x:Key="DataLabel" TargetType="Label">
+                 <Setter Property="TextColor" Value="{StaticResource ForegroundColor}" />
++            </Style>
++            <Style x:Key="CategoryLabel" TargetType="Label">
++                <Setter Property="Margin" Value="0,0,10,0" />
++                <Setter Property="FontSize" Value="14" />
+             </Style>
+         </ResourceDictionary>
+     </ContentPage.Resources>
+ 
+     <ContentPage.Content>
+-        <StackLayout BackgroundColor="{StaticResource BackgroundColor}" Spacing="20" Padding="20">
+-            <Image Source="{Binding ArtistImage}" Aspect="AspectFit" HeightRequest="200" />
++        <Grid BackgroundColor="{StaticResource BackgroundColor}">
++            <Grid.RowDefinitions>
++                <RowDefinition Height="*" />
++                <RowDefinition Height="Auto" />
++            </Grid.RowDefinitions>
+ 
+-            <StackLayout Spacing="5">
+-                <Label Text="Nom de l'artiste" Style="{StaticResource TitleLabel}" FontSize="Large" />
+-                <Label Text="{Binding ArtistName}" Style="{StaticResource DataLabel}" FontSize="Medium" />
+-            </StackLayout>
++            <Image Grid.Row="0" Source="{Binding ArtistImage}" Aspect="AspectFill" HeightRequest="250" />
+ 
+-            <StackLayout Orientation="Horizontal" Spacing="5">
+-                <Label Text="Genres musicaux : " Style="{StaticResource TitleLabel}" />
+-                <Label Text="{Binding ArtistGenres}" Style="{StaticResource DataLabel}" />
+-            </StackLayout>
++            <StackLayout Grid.Row="1" Orientation="Vertical" Padding="20" Spacing="20">
++                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
++                    <Label Text="{Binding ArtistName}" Style="{StaticResource TitleLabel}" FontSize="Large" HorizontalOptions="CenterAndExpand" />
++                </StackLayout>
+ 
+-            <StackLayout Orientation="Horizontal" Spacing="5">
+-                <Label Text="Nombre de followers : " Style="{StaticResource TitleLabel}" />
+-                <Label Text="{Binding ArtistFollowers, StringFormat='{0:n0}'}" Style="{StaticResource DataLabel}" />
+-            </StackLayout>
+-
+-            <StackLayout Orientation="Horizontal" Spacing="5">
+-                <Label Text="Popularité : " Style="{StaticResource TitleLabel}" />
+-                <Label Text="{Binding ArtistPopularity}" Style="{StaticResource DataLabel}" />
++                <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Spacing="10">
++                    <Label Text="Genres musicaux" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
++                    <FlexLayout Wrap="Wrap" HorizontalOptions="StartAndExpand">
++                        <Label Text="{Binding ArtistGenres}" Style="{StaticResource CategoryLabel}" />
++                    </FlexLayout>
++                    <Label Text="Nombre de followers" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
++                    <Label Text="{Binding ArtistFollowers}" Style="{StaticResource DataLabel}" HorizontalOptions="StartAndExpand"/>
++
++                    <Label Text="Popularité" Style="{StaticResource TitleLabel}" HorizontalOptions="StartAndExpand"/>
++                    <Label Text="{Binding ArtistPopularity}" Style="{StaticResource DataLabel}" HorizontalOptions="StartAndExpand"/>
++                </StackLayout>
++                    
+             </StackLayout>
+-        </StackLayout>
++        </Grid>
+     </ContentPage.Content>
+ </ContentPage>
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System;\r\nusing Xamarin.Forms;\r\n\r\nnamespace AudreySpotifyApp\r\n{\r\n    public partial class App : Application\r\n    {\r\n        public App()\r\n        {\r\n            InitializeComponent();\r\n            MainPage = new AppShell();\r\n            AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;\r\n        }\r\n        \r\n        private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)\r\n        {\r\n            Exception exception = e.ExceptionObject as Exception;\r\n            Console.WriteLine(\"Exception non gérée : \" + exception?.Message);\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs b/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs	(date 1681317080065)
+@@ -10,6 +10,7 @@
+             InitializeComponent();
+             MainPage = new AppShell();
+             AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
++            
+         }
+         
+         private void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<Application xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n             x:Class=\"AudreySpotifyApp.App\">\r\n    <!--\r\n        Define global resources and styles here, that apply to all pages in your app.\r\n    -->\r\n    <Application.Resources>\r\n        <ResourceDictionary>\r\n            <Color x:Key=\"Primary\">#2196F3</Color>\r\n            <Style TargetType=\"Button\">\r\n                <Setter Property=\"TextColor\" Value=\"White\"></Setter>\r\n                <Setter Property=\"VisualStateManager.VisualStateGroups\">\r\n                    <VisualStateGroupList>\r\n                        <VisualStateGroup x:Name=\"CommonStates\">\r\n                            <VisualState x:Name=\"Normal\">\r\n                                <VisualState.Setters>\r\n                                    <Setter Property=\"BackgroundColor\" Value=\"{StaticResource Primary}\" />\r\n                                </VisualState.Setters>\r\n                            </VisualState>\r\n                            <VisualState x:Name=\"Disabled\">\r\n                                <VisualState.Setters>\r\n                                    <Setter Property=\"BackgroundColor\" Value=\"#332196F3\" />\r\n                                </VisualState.Setters>\r\n                            </VisualState>\r\n                        </VisualStateGroup>\r\n                    </VisualStateGroupList>\r\n                </Setter>\r\n            </Style>\r\n        </ResourceDictionary>        \r\n    </Application.Resources>\r\n</Application>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml b/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml	(date 1681317944825)
+@@ -7,7 +7,7 @@
+     -->
+     <Application.Resources>
+         <ResourceDictionary>
+-            <Color x:Key="Primary">#2196F3</Color>
++            <Color x:Key="Primary">#2b9ff0</Color>
+             <Style TargetType="Button">
+                 <Setter Property="TextColor" Value="White"></Setter>
+                 <Setter Property="VisualStateManager.VisualStateGroups">
+@@ -20,7 +20,7 @@
+                             </VisualState>
+                             <VisualState x:Name="Disabled">
+                                 <VisualState.Setters>
+-                                    <Setter Property="BackgroundColor" Value="#332196F3" />
++                                    <Setter Property="BackgroundColor" Value="#156cb3" />
+                                 </VisualState.Setters>
+                             </VisualState>
+                         </VisualStateGroup>
+@@ -29,4 +29,4 @@
+             </Style>
+         </ResourceDictionary>        
+     </Application.Resources>
+-</Application>
++</Application>
+\ No newline at end of file
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n             xmlns:local=\"clr-namespace:AudreySpotifyApp.Views\"\r\n             x:Class=\"AudreySpotifyApp.Views.AboutPage\"\r\n             BackgroundColor=\"#000525\">\r\n\r\n    <FlexLayout Direction=\"Column\"\r\n                JustifyContent=\"SpaceEvenly\">\r\n        \r\n        <Label Text=\"Bienvenue sur ma première application Xamarin !\"\r\n               VerticalOptions=\"Start\"\r\n               FontSize=\"Title\"\r\n               HorizontalTextAlignment=\"Center\"\r\n               TextColor=\"White\"/>\r\n        \r\n        <Label Text=\"Dans cette application, nous allons afficher diverses informations liées à l'API Spotify.\"\r\n               VerticalOptions=\"Start\"\r\n               FontSize=\"Body\"\r\n               HorizontalTextAlignment=\"Center\"\r\n               TextColor=\"White\"/>\r\n        \r\n        <Grid ColumnSpacing=\"20\">\r\n            <Grid.ColumnDefinitions>\r\n                <ColumnDefinition Width=\"*\"/>\r\n                <ColumnDefinition Width=\"*\"/>\r\n            </Grid.ColumnDefinitions>       \r\n            <Image Source=\"Xamarin_l\" \r\n                   WidthRequest=\"{OnPlatform iOS=80, Android=80}\" \r\n                   HorizontalOptions=\"Center\" \r\n                   Grid.Column=\"0\"/>\r\n\r\n            <Image Source=\"Spotify_App_Logo\" \r\n                   WidthRequest=\"{OnPlatform iOS=80, Android=80}\" \r\n                   HorizontalOptions=\"Center\" \r\n                   Grid.Column=\"1\"/>\r\n        </Grid>\r\n        <Button Margin=\"0,10,0,0\" Text=\"Clique en vif\"\r\n                Command=\"{Binding InvertColorsCommand}\"\r\n                BackgroundColor=\"#009519\"\r\n                TextColor=\"White\" />\r\n\r\n        <Grid x:Name=\"ColorGrid\" RowSpacing=\"2\" ColumnSpacing=\"2\"\r\n              HorizontalOptions=\"FillAndExpand\">\r\n            <Grid.RowDefinitions>\r\n                <RowDefinition Height=\"*\"/>\r\n                <RowDefinition Height=\"*\"/>\r\n                <RowDefinition Height=\"*\"/>\r\n                <RowDefinition Height=\"*\"/>\r\n            </Grid.RowDefinitions>\r\n            <Grid.ColumnDefinitions>\r\n                <ColumnDefinition Width=\"*\"/>\r\n                <ColumnDefinition Width=\"*\"/>\r\n                <ColumnDefinition Width=\"*\"/>\r\n                <ColumnDefinition Width=\"*\"/>\r\n                <ColumnDefinition Width=\"*\"/>\r\n            </Grid.ColumnDefinitions>\r\n        </Grid>\r\n        <StackLayout Orientation=\"Horizontal\"\r\n                     HorizontalOptions=\"Center\"\r\n                     Spacing=\"5\">\r\n            <Button Text=\"1\"\r\n                    BackgroundColor=\"Transparent\"\r\n                    TextColor=\"White\"\r\n                    FontSize=\"Medium\"\r\n                    Command=\"{Binding NavigateToAboutPageCommand}\" />\r\n            <Button Text=\"2\"\r\n                    BackgroundColor=\"Transparent\"\r\n                    TextColor=\"White\"\r\n                    FontSize=\"Medium\"\r\n                    Command=\"{Binding NavigateToArtistPageCommand}\" />\r\n            <Button Text=\"3\"\r\n                    BackgroundColor=\"Transparent\"\r\n                    TextColor=\"White\"\r\n                    FontSize=\"Medium\"\r\n                    Command=\"{Binding NavigateToAlbumPageCommand}\" />\r\n            <Button Text=\"4\"\r\n                    BackgroundColor=\"Transparent\"\r\n                    TextColor=\"White\"\r\n                    FontSize=\"Medium\" />    \r\n        </StackLayout>\r\n    </FlexLayout>\r\n</ContentPage>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml	(date 1681318777648)
+@@ -37,7 +37,7 @@
+         </Grid>
+         <Button Margin="0,10,0,0" Text="Clique en vif"
+                 Command="{Binding InvertColorsCommand}"
+-                BackgroundColor="#009519"
++                BackgroundColor="#0077C2"
+                 TextColor="White" />
+ 
+         <Grid x:Name="ColorGrid" RowSpacing="2" ColumnSpacing="2"
+Index: .idea/.idea.AudreySpotifyApp/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AndroidLayouts\">\r\n    <shared>\r\n      <config />\r\n    </shared>\r\n  </component>\r\n  <component name=\"AutoGeneratedRunConfigurationManager\">\r\n    <projectFile kind=\"XamarinAndroid\">AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj</projectFile>\r\n    <projectFile kind=\"XamarinIOS\">AudreySpotifyApp/AudreySpotifyApp.iOS/AudreySpotifyApp.iOS.csproj</projectFile>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4be72354-cb48-4aaa-b11e-0ade3bfb4788\" name=\"Changes\" comment=\"+ Mise en page Page 2 rapide\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"97a84439-3187-4fe3-879f-1ef5064d45df\" />\r\n        <option name=\"url\" value=\"https://github.com/AuPicaud/Xamarin.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/ArtistViewModel.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"InvalidFacetManager\">\r\n    <ignored-facets>\r\n      <facet id=\"AudreySpotifyApp.Android/invalid/Android Facet - AudreySpotifyApp.Android\" />\r\n    </ignored-facets>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2N2urcwe1hhyEdvvNFXy6aTssA1\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [\r\n      &quot;C#&quot;\r\n    ],\r\n    &quot;rider.external.source.directories&quot;: [\r\n      &quot;C:\\\\Users\\\\m1x6m\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2023.1\\\\resharper-host\\\\DecompilerCache&quot;,\r\n      &quot;C:\\\\Users\\\\m1x6m\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2023.1\\\\resharper-host\\\\SourcesCache&quot;,\r\n      &quot;C:\\\\Users\\\\m1x6m\\\\AppData\\\\Local\\\\Symbols\\\\src&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Xamarin.Android.AudreySpotifyApp.Android\">\r\n    <configuration name=\"AudreySpotifyApp.Android\" type=\"XamarinAndroidProject\" factoryName=\"Xamarin.Android\">\r\n      <option name=\"PROJECT_PATH\" value=\"$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/AudreySpotifyApp.Android.csproj\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n      <option name=\"TARGET_SELECTION_MODE\" value=\"SHOW_DIALOG\" />\r\n      <option name=\"DEPLOY_BEHAVIOUR_NAME\" value=\"Default\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"AudreySpotifyApp.iOS\" type=\"XamarinIOSProject\" factoryName=\"Xamarin.iOS\">\r\n      <option name=\"PROJECT_PATH\" value=\"$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.iOS/AudreySpotifyApp.iOS.csproj\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n      <option name=\"IS_PASS_PARENT_ENVS\" value=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4be72354-cb48-4aaa-b11e-0ade3bfb4788\" name=\"Changes\" comment=\"\" />\r\n      <created>1678874700470</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678874700470</updated>\r\n      <workItem from=\"1678874701131\" duration=\"326000\" />\r\n      <workItem from=\"1678883682935\" duration=\"1356000\" />\r\n      <workItem from=\"1678885152378\" duration=\"3283000\" />\r\n      <workItem from=\"1678888665810\" duration=\"2694000\" />\r\n      <workItem from=\"1681195939682\" duration=\"429000\" />\r\n      <workItem from=\"1681196394401\" duration=\"1394000\" />\r\n      <workItem from=\"1681197847256\" duration=\"512000\" />\r\n      <workItem from=\"1681198526586\" duration=\"531000\" />\r\n      <workItem from=\"1681199376199\" duration=\"9246000\" />\r\n      <workItem from=\"1681212734967\" duration=\"9487000\" />\r\n      <workItem from=\"1681231753939\" duration=\"8819000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel\">\r\n      <created>1681204831376</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681204831376</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité\">\r\n      <created>1681221529475</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681221529475</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"+ Mise en page Page 2 rapide\">\r\n      <created>1681235245548</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681235245548</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"NUnit\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel\" />\r\n    <MESSAGE value=\"+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité\" />\r\n    <MESSAGE value=\"+ Mise en page Page 2 rapide\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"+ Mise en page Page 2 rapide\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml b/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml
+--- a/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml	(date 1681318751042)
+@@ -13,13 +13,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="+ Mise en page Page 2 rapide">
++    <list default="true" id="4be72354-cb48-4aaa-b11e-0ade3bfb4788" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudreySpotifyApp/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/AppShell.xaml.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/App.xaml.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/AboutViewModel.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AlbumPage.xaml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -42,10 +43,12 @@
+     </option>
+   </component>
+   <component name="HighlightingSettingsPerFile">
++    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/ViewModels/ArtistViewModel.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/AboutPage.xaml" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/m1x6m/Documents/XamarinBUT/Xamarin/AudreySpotifyApp/AudreyMaximeSpotifyApp/Views/ArtistPage.xaml" root0="SKIP_HIGHLIGHTING" />
+   </component>
+   <component name="InvalidFacetManager">
+@@ -128,7 +131,9 @@
+       <workItem from="1681198526586" duration="531000" />
+       <workItem from="1681199376199" duration="9246000" />
+       <workItem from="1681212734967" duration="9487000" />
+-      <workItem from="1681231753939" duration="8819000" />
++      <workItem from="1681231753939" duration="9897000" />
++      <workItem from="1681304084221" duration="3927000" />
++      <workItem from="1681315641742" duration="3079000" />
+     </task>
+     <task id="LOCAL-00001" summary="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel">
+       <created>1681204831376</created>
+@@ -151,7 +156,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1681235245548</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas">
++      <created>1681241122166</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1681241122166</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -175,6 +187,7 @@
+     <MESSAGE value="+ Tableau fonctionnel avec btn Un échiquier de carrés de couleurs( 5 de long par 4 de haut)&#10;                               Clic sur bouton inverser couleurs .&#10;                               Utilisation composant FlexLayout dans cette page.&#10;                               Changement couleurs carrés se fait en utilisant un ViewModel" />
+     <MESSAGE value="+ Connexion à l’API de Spotify (SpotifyService.cs saisir les identifiants), + Seconde page (clique sur btn 2) :&#10;- Image de l'artiste&#10;- Nom&#10;- Genre musicaux&#10;- Nombre de followers&#10;- Popularité" />
+     <MESSAGE value="+ Mise en page Page 2 rapide" />
+-    <option name="LAST_COMMIT_MESSAGE" value="+ Mise en page Page 2 rapide" />
++    <MESSAGE value="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas" />
++    <option name="LAST_COMMIT_MESSAGE" value="+ Page 3 , afficher les informations d'un album &#10;depuis l’API Spotify au clique sur btn 3.&#10;         • Nom de l’album&#10;         • Image de l’album&#10;         • Nom de l’artiste&#10;         • Date de réalisation&#10;         • Liste des titres ( ListView ou CollectionView) TODO Affiche pas" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System;\r\n\r\nusing Android.App;\r\nusing Android.Content.PM;\r\nusing Android.Runtime;\r\nusing Android.OS;\r\n\r\nnamespace AudreySpotifyApp.Droid\r\n{\r\n    [Activity(Label = \"AudreyMaximeSpotifyApp\", Icon = \"@mipmap/icon\", Theme = \"@style/MainTheme\", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]\r\n    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity\r\n    {\r\n        protected override void OnCreate(Bundle savedInstanceState)\r\n        {\r\n            base.OnCreate(savedInstanceState);\r\n\r\n            Xamarin.Essentials.Platform.Init(this, savedInstanceState);\r\n            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);\r\n            LoadApplication(new App());\r\n        }\r\n        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)\r\n        {\r\n            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);\r\n\r\n            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs b/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs
+--- a/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreySpotifyApp.Android/MainActivity.cs	(date 1681317080038)
+@@ -25,4 +25,5 @@
+             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+         }
+     }
++    
+ }
+\ No newline at end of file
+Index: AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Threading.Tasks;\r\nusing SpotifyAPI.Web;\r\nusing SpotifyAPI.Web.Auth;\r\n\r\nnamespace AudreySpotifyApp.Services\r\n{\r\n    public class SpotifyService\r\n    {\r\n        private static SpotifyClient _spotifyClient;\r\n\r\n        public SpotifyService()\r\n        {\r\n            Task.Run(() => InitializeSpotifyClientAsync()).Wait();\r\n        }\r\n\r\n        private async Task InitializeSpotifyClientAsync()\r\n        {\r\n            string clientId = \"clientid\";\r\n            string clientSecret = \"idclietsecret\";\r\n            var token = await GetAccessTokenAsync(clientId, clientSecret);\r\n\r\n            var config = SpotifyClientConfig.CreateDefault();\r\n            _spotifyClient = new SpotifyClient(config.WithToken(token.AccessToken));\r\n        }\r\n\r\n        public async Task<FullArtist> GetArtistAsync(string artistId)\r\n        {\r\n            var artist = await _spotifyClient.Artists.Get(artistId);\r\n            return artist;\r\n        }\r\n        \r\n        public async Task<FullAlbum> GetAlbumAsync(string albumId)\r\n        {\r\n            var album = await _spotifyClient.Albums.Get(albumId);\r\n            return album;\r\n        }\r\n\r\n        private async Task<ClientCredentialsTokenResponse> GetAccessTokenAsync(string clientId, string clientSecret)\r\n        {\r\n            var clientCredentials = new ClientCredentialsRequest(clientId, clientSecret);\r\n            var token = await new OAuthClient().RequestToken(clientCredentials);\r\n            return token;\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs
+--- a/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs	(revision a5fe7b3bf08c713b18eb3ac22c0906a196825422)
++++ b/AudreySpotifyApp/AudreyMaximeSpotifyApp/Spotify Service/SpotifyService.cs	(date 1681241139602)
+@@ -15,8 +15,8 @@
+ 
+         private async Task InitializeSpotifyClientAsync()
+         {
+-            string clientId = "clientid";
+-            string clientSecret = "idclietsecret";
++            string clientId = "14696813b28045e196fda5db93ab04a9";
++            string clientSecret = "263868bb990743e6beb398303d44d7ac";
+             var token = await GetAccessTokenAsync(clientId, clientSecret);
+ 
+             var config = SpotifyClientConfig.CreateDefault();

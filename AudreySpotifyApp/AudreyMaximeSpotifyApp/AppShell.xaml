@@ -81,11 +81,11 @@
     <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </FlyoutItem>
     <FlyoutItem Title="Album" Icon="icon_album.png">
         <ShellContent Route="AlbumPage" ContentTemplate="{DataTemplate local:AlbumPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Playlist" Icon="icon_playlist.png">
+        <ShellContent Route="PlaylistPage" ContentTemplate="{DataTemplate local:PlaylistPage}" />
     </FlyoutItem>
 
 
@@ -100,9 +100,7 @@
         content you can do so by calling 
         await Shell.Current.GoToAsync("//LoginPage");
     -->
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
+    
 
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.

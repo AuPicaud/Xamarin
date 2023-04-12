@@ -12,29 +12,29 @@ namespace AudreySpotifyApp.ViewModels
             Title = "À propos";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
             InvertColorsCommand = new Command(() => MessagingCenter.Send(this, "InvertColors"));
-            NavigateToAboutPageCommand = new Command(NavigateToAboutPage);
+            NavigateToAboutPageCommand = new Command(async () => await Shell.Current.GoToAsync("/AboutPage"));
             NavigateToArtistPageCommand = new Command(async () => await Shell.Current.GoToAsync("/ArtistPage"));
             NavigateToAlbumPageCommand = new Command(async () => await Shell.Current.GoToAsync("/AlbumPage"));
             NavigateToPlaylistPageCommand = new Command(async () => await Shell.Current.GoToAsync("/PlaylistPage"));
 
         }
         
-        private async void NavigateToAboutPage()
+        public async void NavigateToAboutPage()
         {
             await Shell.Current.GoToAsync("/AboutPage");
         }
 
-        private async void NavigateToArtistPage()
+        public async void NavigateToArtistPage()
         {
             await Shell.Current.GoToAsync("/ArtistPage");
         }
         
-        private async void NavigateToAlbumPage()
+        public async void NavigateToAlbumPage()
         {
             await Shell.Current.GoToAsync("/AlbumPage");
         }
         
-        private async void NavigateToPlaylistPage()
+        public async void NavigateToPlaylistPage()
         {
             await Shell.Current.GoToAsync("/PlaylistPage");
         }

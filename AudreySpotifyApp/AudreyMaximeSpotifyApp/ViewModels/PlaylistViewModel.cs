@@ -69,22 +69,38 @@ namespace AudreySpotifyApp.ViewModels
 
         public async Task LoadPlaylistDataAsync()
         {
-            string playlistId = "6rqhFgbbKwnb9MLmUQDhG6"; 
-            var playlist = await _spotifyService.GetPlaylistAsync(playlistId);
-
-            PlaylistName = playlist.Name;
-            PlaylistImage = ImageSource.FromUri(new Uri(playlist.Images[0].Url));
-            OwnerName = playlist.Owner.DisplayName;
-
-            TrackList = new ObservableCollection<string>();
-            foreach (var playlistTrack in playlist.Tracks.Items)
+            try
             {
-                if (playlistTrack.Track is FullTrack track)
+                string playlistId = "66rojy4igQbPcwhV6aoNAa"; 
+                var playlist = await _spotifyService.GetPlaylistAsync(playlistId);
+
+                PlaylistName = playlist.Name;
+                if (playlist.Images.Count > 0)
                 {
-                    TrackList.Add(track.Name);
+                    PlaylistImage = ImageSource.FromUri(new Uri(playlist.Images[0].Url));
+                }
+                if (playlist.Owner != null)
+                {
+                    OwnerName = playlist.Owner.DisplayName;
+                }
+
+                TrackList = new ObservableCollection<string>();
+                foreach (var playlistTrack in playlist.Tracks.Items)
+                {
+                    if (playlistTrack.Track is FullTrack track)
+                    {
+                        TrackList.Add(track.Name);
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading playlist data: {ex}");
+                // or any other way to handle the error
+            }
         }
+
+
         
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
