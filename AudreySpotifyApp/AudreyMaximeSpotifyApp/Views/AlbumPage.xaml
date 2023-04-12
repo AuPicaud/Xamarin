@@ -45,7 +45,7 @@
                 <CollectionView ItemsSource="{Binding TrackList}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Label Text="{Binding TrackName}" Style="{StaticResource DataLabel}" FontSize="Medium" />
+                            <Label Text="{Binding .}" Style="{StaticResource DataLabel}" FontSize="Medium" />
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
