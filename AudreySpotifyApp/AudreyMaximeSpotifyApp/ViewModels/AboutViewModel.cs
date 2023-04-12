@@ -15,6 +15,8 @@ namespace AudreySpotifyApp.ViewModels
             NavigateToAboutPageCommand = new Command(NavigateToAboutPage);
             NavigateToArtistPageCommand = new Command(async () => await Shell.Current.GoToAsync("/ArtistPage"));
             NavigateToAlbumPageCommand = new Command(async () => await Shell.Current.GoToAsync("/AlbumPage"));
+            NavigateToPlaylistPageCommand = new Command(async () => await Shell.Current.GoToAsync("/PlaylistPage"));
+
         }
         
         private async void NavigateToAboutPage()
@@ -31,11 +33,18 @@ namespace AudreySpotifyApp.ViewModels
         {
             await Shell.Current.GoToAsync("/AlbumPage");
         }
+        
+        private async void NavigateToPlaylistPage()
+        {
+            await Shell.Current.GoToAsync("/PlaylistPage");
+        }
 
         public ICommand OpenWebCommand { get; }
         public ICommand InvertColorsCommand { get; }
         public ICommand NavigateToAboutPageCommand { get; }
         public ICommand NavigateToArtistPageCommand { get; }
         public ICommand NavigateToAlbumPageCommand { get; }
+        public ICommand NavigateToPlaylistPageCommand { get; }
+        
     }
 }

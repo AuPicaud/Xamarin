@@ -77,7 +77,8 @@
             <Button Text="4"
                     BackgroundColor="Transparent"
                     TextColor="White"
-                    FontSize="Medium" />    
+                    FontSize="Medium"
+                    Command="{Binding NavigateToPlaylistPageCommand}" />
         </StackLayout>
     </FlexLayout>
 </ContentPage>

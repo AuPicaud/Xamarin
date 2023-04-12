@@ -14,6 +14,7 @@ namespace AudreySpotifyApp
             Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
             Routing.RegisterRoute(nameof(ArtistPage), typeof(ArtistPage));
             Routing.RegisterRoute(nameof(AlbumPage), typeof(AlbumPage));
+            Routing.RegisterRoute(nameof(PlaylistPage), typeof(PlaylistPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
