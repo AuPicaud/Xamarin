@@ -24,7 +24,7 @@
         <Image Source="{Binding PlaylistImage}" Aspect="AspectFill" HeightRequest="200" />
         <Label Text="{Binding PlaylistName}" Style="{StaticResource TitleLabel}" />
         <Label Text="{Binding OwnerName}" Style="{StaticResource DataLabel}" />
-        <ListView ItemsSource="{Binding TrackList}">
+        <ListView ItemsSource="{Binding TrackList}" ItemTapped="OnTrackTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -33,6 +33,7 @@
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
+
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>

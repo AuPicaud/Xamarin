@@ -22,6 +22,14 @@ namespace AudreySpotifyApp.Services
             var config = SpotifyClientConfig.CreateDefault();
             _spotifyClient = new SpotifyClient(config.WithToken(token.AccessToken));
         }
+        
+        public async Task<SearchResponse> SearchForTrackAsync(string trackName)
+        {
+            var searchRequest = new SearchRequest(SearchRequest.Types.Track, trackName);
+            var searchResponse = await _spotifyClient.Search.Item(searchRequest);
+            return searchResponse;
+        }
+
 
         public async Task<FullArtist> GetArtistAsync(string artistId)
         {
