@@ -7,6 +7,9 @@
             <Color x:Key="BackgroundColor">#F2F6FE</Color>
             <Color x:Key="ForegroundColor">#1C1C1E</Color>
             <Color x:Key="AccentColor">#0077C2</Color>
+            <Color x:Key="SecondaryColor">#282828</Color>
+            <Color x:Key="BorderColor">#a9dcff</Color>
+            <Color x:Key="TextColor">#B3B3B3</Color>
             <Style x:Key="TitleLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
                 <Setter Property="FontAttributes" Value="Bold" />
@@ -39,14 +42,19 @@
 
             <StackLayout Spacing="5">
                 <Label Text="Liste des titres" Style="{StaticResource TitleLabel}" FontSize="Large" />
-                <CollectionView ItemsSource="{Binding TrackList}">
-                    <CollectionView.ItemTemplate>
+                <ListView ItemsSource="{Binding TrackList}" BackgroundColor="{StaticResource BackgroundColor}" SeparatorColor="{StaticResource BorderColor}" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Label Text="{Binding .}" Style="{StaticResource DataLabel}" FontSize="Medium" />
+                            <ViewCell>
+                                <StackLayout Padding="10">
+                                    <Label Text="{Binding .}" Style="{StaticResource DataLabel}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell>
                         </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
