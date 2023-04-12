@@ -69,6 +69,7 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LogoMusic.png" />
     <AndroidResource Include="Resources\drawable\Spotify_App_Logo.png" />
     <AndroidResource Include="Resources\drawable\Xamarin_l.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
